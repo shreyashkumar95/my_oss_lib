@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "kentcdodds/best-practices",
+    "kentcdodds/possible-errors",
+    "kentcdodds/import/possible-errors",
+    "kentcdodds/import/best-practices",
+    "kentcdodds/mocha"
+  ],
+  "rules": {
+
+  }
+}
