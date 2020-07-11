@@ -1,6 +1,6 @@
 {
   "name": "start-starwars-lib",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An Open Source Library for star-wars",
   "main": "dist/index.js",
   "dependencies": {
