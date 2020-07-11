@@ -572,7 +572,7 @@
     "yargs-parser": "^2.4.1"
   },
   "devDependencies": {
-    "semantic-release": "^17.1.1"
+    "semantic-release": "4.2.1"
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha",
