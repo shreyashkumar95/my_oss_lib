@@ -1,13 +1,10 @@
-const uniqueRandomArray = require('unique-random-array');
+import uniqueRandomArray from 'unique-random-array';
 const starWarsNames = require('./starwars-names.json');
 
-module.exports = {
+const mainExport = {
   all: starWarsNames,
   random: uniqueRandomArray(starWarsNames),
 };
 
-// function uselessFunction() {
-//   console.log('I am a useless function');
-// }
-
-// uselessFunction();
+export default mainExport;
+module.exports = mainExport; // for CommonJS compatibility
