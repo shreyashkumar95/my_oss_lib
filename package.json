@@ -175,7 +175,7 @@
     "delegates": "^1.0.0",
     "detect-indent": "^4.0.0",
     "dezalgo": "^1.0.3",
-    "diff": "^1.4.0",
+    "diff": "^4.0.2",
     "domain-browser": "^1.2.0",
     "duplexer": "^0.1.1",
     "ecc-jsbn": "^0.1.2",
