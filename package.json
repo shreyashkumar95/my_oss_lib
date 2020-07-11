@@ -186,7 +186,7 @@
     "es-abstract": "^1.17.6",
     "es-to-primitive": "^1.2.1",
     "escape-string-regexp": "^1.0.5",
-    "eslint": "3.2.0",
+    "eslint": "4.18.2",
     "eslint-config-kentcdodds": "^9.0.0",
     "esutils": "^2.0.3",
     "event-stream": "^3.3.4",
