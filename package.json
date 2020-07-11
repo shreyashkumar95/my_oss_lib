@@ -1,6 +1,6 @@
 {
   "name": "start-starwars-lib",
-  "version": "2.0.1",
+  "version": "0.0.0-development",
   "description": "An Open Source Library for star-wars",
   "main": "dist/index.js",
   "dependencies": {
@@ -229,7 +229,7 @@
     "get-stdin": "^4.0.1",
     "get-value": "^2.0.6",
     "getpass": "^0.1.7",
-    "ghooks": "^1.3.2",
+    "ghooks": "1.3.2",
     "git-head": "^1.20.1",
     "git-refs": "^1.1.3",
     "github": "^0.2.4",
@@ -471,7 +471,6 @@
     "safe-buffer": "^5.1.2",
     "safe-regex": "^1.1.0",
     "safer-buffer": "^2.1.2",
-    "semantic-release": "^4.3.5",
     "semver": "^5.7.1",
     "semver-regex": "^1.0.0",
     "semver-truncate": "^1.1.2",
@@ -550,6 +549,7 @@
     "util-deprecate": "^1.0.2",
     "uuid": "^3.4.0",
     "v8flags": "^2.1.1",
+    "validate-commit-msg": "2.6.1",
     "validate-npm-package-license": "^3.0.4",
     "verror": "^1.10.0",
     "vm-browserify": "^0.0.4",
@@ -571,7 +571,9 @@
     "yargs": "^4.8.1",
     "yargs-parser": "^2.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "semantic-release": "^17.1.1"
+  },
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc mocha",
     "watch:test": "mocha --watch",
@@ -582,11 +584,13 @@
     "build:umd": "webpack --output-filename index.umd.js",
     "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "build": "npm-run-all --parallel build:*",
-    "report-coverage": "cat ./coverage/lcov.info | codecov"
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jslvtr98/my_oss_lib.git"
+    "url": "https://github.com/jslvtr98/my_oss_lib.git"
   },
   "keywords": [
     "star-wars"
@@ -622,7 +626,11 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run validate"
+      "pre-commit": "npm run validate",
+      "commit-msg": "validate-commit-msg"
+    },
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   },
   "babel": {
