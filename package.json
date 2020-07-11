@@ -136,7 +136,7 @@
     "cliui": "^3.2.0",
     "clone": "^1.0.4",
     "code-point-at": "^1.1.0",
-    "codecov": "^1.0.1",
+    "codecov": "^3.6.5",
     "collection-visit": "^1.0.0",
     "colors": "^0.6.2",
     "combined-stream": "^1.0.8",
