@@ -569,7 +569,7 @@
     "y18n": "^3.2.1",
     "yallist": "^2.1.2",
     "yargs": "^4.8.1",
-    "yargs-parser": "^2.4.1"
+    "yargs-parser": "^20.0.0"
   },
   "devDependencies": {
     "semantic-release": "4.2.1"
